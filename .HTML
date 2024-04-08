@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obesidade e seus malefícios</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"
+</head>
+<body>
+<h1>Obesidade e seus malefícios</h1>
+<p>A obesidade é uma condição médica caracterizada pelo acúmulo excessivo de gordura corporal, que pode ter impactos significativos na saúde.</p>
+<p>Alguns dos malefícios da obesidade incluem:</p>
+<ul>
+  <li>Risco aumentado de doenças cardiovasculares, como hipertensão e doença arterial coronariana.</li>
+  <li>Aumento do risco de desenvolver diabetes tipo 2.</li>
+  <li>Maior probabilidade de desenvolver certos tipos de câncer, como câncer de mama, cólon e rim.</li>
+  <li>Problemas ortopédicos, como osteoartrite.</li>
+  <li>Impacto negativo na saúde mental, incluindo depressão e baixa autoestima.</li>
+</ul>
+<p>É importante adotar hábitos saudáveis, como alimentação equilibrada e prática regular de exercícios físicos, para prevenir e tratar a obesidade.</p>
+<P>A seguir disponibilizamos uma calculadora para verificação do seu IMC.</P>
+<h1>Calculadora de IMC</h1>
+<form id="calculo-imc">
+  <label for="altura">Altura (m):</label>
+  <input type="number" step="0.01" id="altura" name="altura" required>
+  <br>
+  <label for="peso">Peso (kg):</label>
+  <input type="number" step="0.1" id="peso" name="peso" required>
+  <br>
+  <label for="genero">Gênero:</label>
+  <select id="genero" name="genero">
+    <option value="homem">Homem</option>
+    <option value="mulher">Mulher</option>
+  </select>
+  <br>
+  <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+</form>
+<div id="resultado"></div>
+
+<script src="calculo-imc.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
